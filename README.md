@@ -12,4 +12,4 @@ There two folders:
 Finally you need to create an index and a document to stock your data in elasticsearch
 
 **NB** : we can deploy a survey with python only but the idea behind this project is to show how *API* created with plumber R can interact with other framework.
-*You can download elasticsearch ![here](https://www.elastic.co/fr/downloads/elasticsearch)*
+*You can download elasticsearch [here](https://www.elastic.co/fr/downloads/elasticsearch)*
