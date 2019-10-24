@@ -1,10 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Test</title>
 </head>
 <body>
-$END$
+    <div class="container">
+        <h1 style="text-align: center" class="display-5">Questionnaire de satisfaction</h1>
+        <p>
+            Dans le cadre de l'amélioration de nos produits et services, nous souhaiterions recueillir votre avis quant à la qualité de nos produits et services.
+Accordez-nous quelques minutes pour répondre à ce questionnaire.
+        </p>
+        <p>Le traitement de vos réponses nous aidera à améliorer nos prestations.</p>
+        <p>En vous remerciant par avance, je vous prie de croire, cher Client, en l'expression de nos sincères salutations. Le Directeur.</p>
+        <br><br>
+        <form class="needs-validation" method="post" action="handle" accept-charset="ISO-8859-1" novalidate>
+            <fieldset>
+                <legend><strong>1.  Informations personnelles</strong></legend>
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <label>Prénom</label>
+                        <input type="text" class="form-control" name="prenom" placeholder="Prénom" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label>Nom</label>
+                        <input type="text" class="form-control" name="nom" placeholder="Nom" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label>Email</label>
+                        <input type="email" class="form-control" name="email" placeholder="username@gmail.com" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label>Ville</label>
+                        <input type="text" class="form-control" name="ville" placeholder="Ville" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label>Pays</label>
+                        <input type="text" class="form-control" name="pays" placeholder="Pays" required>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend><strong>2.  Concernant notre accueil téléphonique</strong></legend>
+                <div class="form-row">
+                    <div class="col-md-6 mb-4">
+                        <label>Temps d'attente</label>
+                        <select class="form-control" name="temps_attente">
+                            <option>Tres bien</option>
+                            <option>Bien</option>
+                            <option>Passable</option>
+                            <option>Mauvais</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label>Amabilité et écoute</label>
+                        <select class="form-control" name="amabilite_ecoute">
+                            <option>Tres bien</option>
+                            <option>Bien</option>
+                            <option>Passable</option>
+                            <option>Mauvais</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label>Compréhension de votre demande</label>
+                        <select class="form-control" name="comprehension_demande">
+                            <option>Tres bien</option>
+                            <option>Bien</option>
+                            <option>Passable</option>
+                            <option>Mauvais</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label>Qualité de la réponse apportée</label>
+                        <select class="form-control" name="qualite_reponse">
+                            <option>Tres bien</option>
+                            <option>Bien</option>
+                            <option>Passable</option>
+                            <option>Mauvais</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend><strong>3.  Concernant nos devis</strong></legend>
+                <div class="form-row">
+                    <div class="col-md-6 mb-4">
+                        <label>Conformité à vos exigences</label>
+                        <select class="form-control" name="exigence">
+                            <option>Tres bien</option>
+                            <option>Bien</option>
+                            <option>Passable</option>
+                            <option>Mauvais</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label>Clarté et simplicité du devis</label>
+                        <select class="form-control" name="clarte_simplicite">
+                            <option>Tres bien</option>
+                            <option>Bien</option>
+                            <option>Passable</option>
+                            <option>Mauvais</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-12 mb-3">
+                        <label>Delais de reception du devis</label>
+                        <select class="form-control" name="delais">
+                            <option>Très bien</option>
+                            <option>Bien</option>
+                            <option>Passable</option>
+                            <option>Mauvais</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend><strong>4.  Concernant nos produits</strong></legend>
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <label>Nos produits répondent-ils à vos besoins ?</label>
+                        <select class="form-control" name="produits_besoin">
+                            <option>Tres bien</option>
+                            <option>Bien</option>
+                            <option>Passable</option>
+                            <option>Mauvais</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label>Qualité globale de nos produits ?</label>
+                        <select class="form-control" name="qualite_produit">
+                            <option>Tres bien</option>
+                            <option>Bien</option>
+                            <option>Passable</option>
+                            <option>Mauvais</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label>Respect des engagements de livraison</label>
+                        <select class="form-control" name="engag_livraison">
+                            <option>Tres bien</option>
+                            <option>Bien</option>
+                            <option>Passable</option>
+                            <option>Mauvais</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label>Documentation jointe au produit</label>
+                        <select class="form-control" name="doc_prod">
+                            <option>Tres bien</option>
+                            <option>Bien</option>
+                            <option>Passable</option>
+                            <option>Mauvais</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label>Mise en route, prise en main  du matériel</label>
+                        <select class="form-control" name="prise_en_main">
+                            <option>Tres bien</option>
+                            <option>Bien</option>
+                            <option>Passable</option>
+                            <option>Mauvais</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend><strong>5.	Concernant le service après-vente</strong></legend>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label>Le service après-vente est-il efficace ?</label>
+                        <select class="form-control" name="service_apres_vente">
+                            <option>Tres bien</option>
+                            <option>Bien</option>
+                            <option>Passable</option>
+                            <option>Mauvais</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label>Respect des délais d'intervention</label>
+                        <select class="form-control" name="respect_delais_interv">
+                            <option>Tres bien</option>
+                            <option>Bien</option>
+                            <option>Passable</option>
+                            <option>Mauvais</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend><strong>6.	Autres éléments</strong></legend>
+                <div class="form-row">
+                    <div class="col-md-12 mb-3">
+                        <label>Vos relations avec nos commerciaux</label>
+                        <select class="form-control" name="relation_com">
+                            <option>Tres bien</option>
+                            <option>Bien</option>
+                            <option>Passable</option>
+                            <option>Mauvais</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label>Qualité de notre document commerciale</label>
+                        <select class="form-control" name="qualite_com">
+                            <option>Tres bien</option>
+                            <option>Bien</option>
+                            <option>Passable</option>
+                            <option>Mauvais</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label>Qualité de notre site Internet</label>
+                        <select class="form-control" name="qualite_site_internet">
+                            <option>Tres bien</option>
+                            <option>Bien</option>
+                            <option>Passable</option>
+                            <option>Mauvais</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+            <button class="btn btn-primary" type="submit">Envoyer</button>
+        </form>
+        <br><br>
+    </div>
+
+    <script>
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                var forms = document.getElementsByClassName('needs-validation');
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+
+    <!-- Options -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
